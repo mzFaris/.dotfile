@@ -38,8 +38,8 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 # Brightness control
-bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl +10 # increase screen brightness
-bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl 10- # decrease screen brightness
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl s +10 # increase screen brightness
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl s 10- # decrease screen brightness
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
